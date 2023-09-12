@@ -1,0 +1,93 @@
+[
+    {
+      "name": "Piano Lessons",
+      "description": "Learn to play the piano instruction.",
+      "instructor": "Emily Davis",
+      "instrument": "Piano",
+      "day_of_week": "Tuesdays",
+      "number_of_students": 8,
+      "price": 60
+    },
+    {
+      "name": "Violin Classes",
+      "description": "Master the violin expert guidance.",
+      "instructor": "Michael Johnson",
+      "instrument": "Violin",
+      "day_of_week": "Wednesdays",
+      "number_of_students": 6,
+      "price": 55
+    },
+    {
+      "name": "Drum Workshop",
+      "description": "Explore the world in an workshop.",
+      "instructor": "Sarah Miller",
+      "instrument": "Drums",
+      "day_of_week": "Saturdays",
+      "number_of_students": 12,
+      "price": 70
+    },
+    {
+      "name": "Saxophone Lessons",
+      "description": "Discover the saxophone with lessons.",
+      "instructor": "Robert Clark",
+      "instrument": "Saxophone",
+      "day_of_week": "Thursdays",
+      "number_of_students": 7,
+      "price": 65
+    },
+    {
+      "name": "Guitar Masterclass",
+      "description": "Elevate your guitar skills masterclass.",
+      "instructor": "James Anderson",
+      "instrument": "Guitar",
+      "day_of_week": "Fridays",
+      "number_of_students": 10,
+      "price": 75
+    },
+    {
+      "name": "Bass Guitar Lessons",
+      "description": "Learn to groove with bass guitar.",
+      "instructor": "Maria Rodriguez",
+      "instrument": "Bass Guitar",
+      "day_of_week": "Mondays",
+      "number_of_students": 6,
+      "price": 70
+    },
+    {
+      "name": "Flute Classes",
+      "description": "Become a flutist with flute lessons.",
+      "instructor": "Daniel Brown",
+      "instrument": "Flute",
+      "day_of_week": "Wednesdays",
+      "number_of_students": 8,
+      "price": 55
+    },
+    {
+      "name": "Trumpet Workshop",
+      "description": "Master the trumpet in workshop.",
+      "instructor": "Laura White",
+      "instrument": "Trumpet",
+      "day_of_week": "Saturdays",
+      "number_of_students": 10,
+      "price": 80
+    },
+    {
+      "name": "Voice Training",
+      "description": "Improve your singing vocal training.",
+      "instructor": "Mark Johnson",
+      "instrument": "Vocals",
+      "day_of_week": "Tuesdays",
+      "number_of_students": 5,
+      "price": 60
+    },
+    {
+      "name": "Keyboard Lessons",
+      "description": "Learn to play step-by-step lessons.",
+      "instructor": "Anna Davis",
+      "instrument": "Keyboard",
+      "day_of_week": "Mondays",
+      "number_of_students": 7,
+      "price": 50
+    }
+  ]
+  

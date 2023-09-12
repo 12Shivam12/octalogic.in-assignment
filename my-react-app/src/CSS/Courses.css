@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+th, td {
+    padding: 8px 5px 8px 5px
+  }
