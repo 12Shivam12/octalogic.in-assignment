@@ -8,13 +8,13 @@ const Courses = () => {
     return (
         <>
             <div>
-                <h2>Courses</h2>
-                <div>
-                    <h3 className='text-5xl text-orange-500'>course List</h3>
-                    <input type="text" placeholder='Search...' />
+                <h2 className='text-left text-2xl font-black mb-5 text-slate-600' >Courses</h2>
+                <div className='flex justify-between mb-10'>
+                    <h3 className='text-left text-lg font-extrabold text-slate-500'>course List</h3>
+                    <input className='text-left pl-3 border border-gray-300' type="text"  placeholder='Search...' />
                 </div>
 
-                <div>
+                <div className='flex justify-center mb-10'>
                     <table className="border-collapse text-left font-bold text-[13px]">
                         <thead>
                             <tr className=" border-b border-slate-300">
@@ -46,7 +46,9 @@ const Courses = () => {
                         </tbody>
                     </table>
                 </div>
-                <button>+ Add Course</button>
+                <button className="float-right pt-3 pb-3 pl-5 pr-5
+                                  bg-red-200 rounded-lg text-black
+                                  font-bold ">+ Add Course</button>
             </div>
         </>
     )
