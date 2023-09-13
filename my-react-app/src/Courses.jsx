@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import musicClassesData from './MusicClasses.json'
+import data from './MusicClasses.json'
 import './CSS/Courses.css'
 import { BsThreeDotsVertical } from 'react-icons/bs'
 
 const Courses = () => {
-    const [state, setState] = useState(musicClassesData)
+    const [state, setState] = useState(data.musicClass)
     return (
         <>
-            <div>
+            <div className=''>
                 <h2 className='text-left text-2xl font-black mb-5 text-slate-600' >Courses</h2>
                 <div className='flex justify-between mb-10'>
                     <h3 className='text-left text-lg font-extrabold text-slate-500'>course List</h3>

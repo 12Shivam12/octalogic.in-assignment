@@ -1,4 +1,5 @@
-[
+{
+  "musicClass": [
     {
       "name": "Piano Lessons",
       "description": "Learn to play the piano instruction.",
@@ -89,5 +90,84 @@
       "number_of_students": 7,
       "price": 50
     }
+  ],
+  "Enrolments": [
+    {
+      "EnrNo": "001",
+      "SName": "Alice",
+      "CName": "Math",
+      "Fees": "1000",
+      "EnrDate": "2023-09-15"
+    },
+    {
+      "EnrNo": "002",
+      "SName": "Bob",
+      "CName": "History",
+      "Fees": "800",
+      "EnrDate": "2023-09-16"
+    },
+    {
+      "EnrNo": "003",
+      "SName": "Charlie",
+      "CName": "English",
+      "Fees": "1200",
+      "EnrDate": "2023-09-17"
+    },
+    {
+      "EnrNo": "004",
+      "SName": "David",
+      "CName": "Science",
+      "Fees": "950",
+      "EnrDate": "2023-09-18"
+    },
+    {
+      "EnrNo": "005",
+      "SName": "Eve",
+      "CName": "Art",
+      "Fees": "700",
+      "EnrDate": "2023-09-19"
+    }
+  ],
+  "BestStudents": [
+    {
+      "RegNo": "001",
+      "FName": "Alice",
+      "LName": "Smith",
+      "Course": "Math",
+      "TotalFees": "$1000",
+      "EnrDate": "2023-09-15"
+    },
+    {
+      "RegNo": "002",
+      "FName": "Bob",
+      "LName": "Johnson",
+      "Course": "History",
+      "TotalFees": "$800",
+      "EnrDate": "2023-09-16"
+    },
+    {
+      "RegNo": "003",
+      "FName": "Charlie",
+      "LName": "Brown",
+      "Course": "English",
+      "TotalFees": "$1200",
+      "EnrDate": "2023-09-17"
+    },
+    {
+      "RegNo": "004",
+      "FName": "David",
+      "LName": "Miller",
+      "Course": "Science",
+      "TotalFees": "$950",
+      "EnrDate": "2023-09-18"
+    },
+    {
+      "RegNo": "005",
+      "FName": "Eve",
+      "LName": "Davis",
+      "Course": "Art",
+      "TotalFees": "$700",
+      "EnrDate": "2023-09-19"
+    }
   ]
-  
+}
