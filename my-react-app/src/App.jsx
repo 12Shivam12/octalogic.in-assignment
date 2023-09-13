@@ -11,18 +11,19 @@ function App() {
 
   return (
     <>
-      {/* <Navbar/> */}
-      {/* <Card/> */}
-      {/* <Courses/> */}
-      {/* <Home/> */}
-      <div>
-        <div className="">
-          <BrowserRouter>
+      <div className='flex gap-10'>
+        <Navbar />
+        {/* <Card/> */}
+        {/* <Courses/> */}
+        {/* <Home/> */}
+        <div>
+          <div className="">
+
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/courses" element={<Courses />} />
             </Routes>
-          </BrowserRouter>
+          </div>
         </div>
       </div>
 

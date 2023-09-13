@@ -8,7 +8,7 @@ const Home = () => {
 
     // console.log(bestStudents)
     return (
-        <div className='w-[90%] float-right'>
+        <div className='w-[80%]'>
             <div className='flex flex-col'>
                 <h1 className="text-2xl font-[900] float-left self-start mb-8">Overview</h1>
                 <div className='flex justify-center gap-5 mb-8'>
