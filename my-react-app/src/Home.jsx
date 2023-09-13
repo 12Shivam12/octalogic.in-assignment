@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import data from './MusicClasses.json'
 import Card from './Card'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     const [state, setState] = useState(data.Enrolments)
@@ -9,6 +10,7 @@ const Home = () => {
     // console.log(bestStudents)
     return (
         <div className='w-[80vw]'>
+            <Link to='/login'><button className='w-[75px] h-[40px] bg-red-200 rounded-md font-semibold float-right'>Login</button></Link>
             <div className='flex flex-col'>
                 <h1 className="text-2xl font-[900] float-left self-start mb-8">Overview</h1>
                 <div className='flex justify-center gap-5 mb-8'>
