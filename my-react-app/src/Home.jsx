@@ -8,68 +8,70 @@ const Home = () => {
 
     // console.log(bestStudents)
     return (
-        <>
+        <div className='w-[90%] float-right'>
             <div className='flex flex-col'>
-                <h1 className="text-lg font-[900] float-left self-start">Overview</h1>
-                <div className='flex justify-center gap-5'>
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                <h1 className="text-2xl font-[900] float-left self-start mb-8">Overview</h1>
+                <div className='flex justify-center gap-5 mb-8'>
+                    <Card title="164" desc="total number of students" />
+                    <Card title="12" desc="total number of courses" />
+                    <Card title="$2000" desc="total amount earned" />
+                    <Card title="Guitar" desc="best performing course" />
+                    <Card title="Flute" desc="worst performing course" />
                 </div>
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between mb-5">
                 <h3 className="text-md font-extrabold">LATEST ENROLMENTS</h3>
-                <h4 className="text-sm font-semibold">View All Courses</h4>
+                <h4 className="text-sm font-semibold text-red-500">View All Courses</h4>
             </div>
-            <table className="border-collapse text-left font-bold text-[13px] w-4/5 m-auto">
+            <table className="border-collapse text-left font-bold text-[13px] w-full 
+                              rounded-lg">
                 <thead>
                     <tr className=" border-b border-slate-400">
-                        <th>Enr. No</th>
-                        <th>S. Name</th>
-                        <th>C. Name</th>
-                        <th>Fees</th>
-                        <th>Enr. Date</th>
+                        <th className='w-1/5 text-center'>Enr. No</th>
+                        <th className='w-1/5 text-center'>S. Name</th>
+                        <th className='w-1/5 text-center'>C. Name</th>
+                        <th className='w-1/5 text-center'>Fees</th>
+                        <th className='w-1/5 text-center'>Enr. Date</th>
                     </tr>
                 </thead>
                 <tbody>
                     {state.map((value, index) => (
                         <tr className=' border-b border-slate-300 ...' key={index} >
-                            <td>{value.EnrNo}</td>
-                            <td>{value.SName}</td>
-                            <td>{value.CName}</td>
-                            <td>{value.Fees}</td>
-                            <td>{value.EnrDate}</td>
+                            <td className='w-1/5 text-center'>{value.EnrNo}</td>
+                            <td className='w-1/5 text-center'>{value.SName}</td>
+                            <td className='w-1/5 text-center'>{value.CName}</td>
+                            <td className='w-1/5 text-center'>{value.Fees}</td>
+                            <td className='w-1/5 text-center'>{value.EnrDate}</td>
                         </tr>
                     ))}
                 </tbody>
             </table>
 
-            <div className="flex justify-between">
+            <div className="flex justify-between mt-8 mb-5">
                 <h3 className="text-md font-extrabold">LATEST ENROLMENTS</h3>
-                <h4 className="text-sm font-semibold">View All Courses</h4>
+                <h4 className="text-sm font-semibold text-red-500">View All Courses</h4>
             </div>
-            <table className="border-collapse text-left font-bold text-[13px] w-4/5 bg-slate-100 m-auto">
+            <table className="border-collapse text-left font-bold text-[13px] w-full 
+                              rounded-lg">
                 <thead>
                     <tr className=" border-b border-slate-400">
-                        <th>Reg.No</th>
-                        <th>F.Name</th>
-                        <th>L.Name</th>
-                        <th>Course</th>
-                        <th>Total Fees</th>
-                        <th>Reg. Date</th>
+                        <th className='w-1/6 text-center'>Reg.No</th>
+                        <th className='w-1/6 text-center'>F.Name</th>
+                        <th className='w-1/6 text-center'>L.Name</th>
+                        <th className='w-1/6 text-center'>Course</th>
+                        <th className='w-1/6 text-center'>Total Fees</th>
+                        <th className='w-1/6 text-center'>Reg. Date</th>
                     </tr>
                 </thead>
                 <tbody>
                     {bestStudents.map((value, index) => (
                         <tr className=' border-b border-slate-300 ...' key={index} >
-                            <td>{value.RegNo}</td>
-                            <td>{value.FName}</td>
-                            <td>{value.LName}</td>
-                            <td>{value.Course}</td>
-                            <td>{value.TotalFees}</td>
-                            <td>{value.EnrDate}</td>
+                            <td className='w-1/6 text-center'>{value.RegNo}</td>
+                            <td className='w-1/6 text-center'>{value.FName}</td>
+                            <td className='w-1/6 text-center'>{value.LName}</td>
+                            <td className='w-1/6 text-center'>{value.Course}</td>
+                            <td className='w-1/6 text-center'>{value.TotalFees}</td>
+                            <td className='w-1/6 text-center'>{value.EnrDate}</td>
                         </tr>
                     ))}
                 </tbody>
@@ -77,7 +79,7 @@ const Home = () => {
 
 
 
-        </>
+        </div>
     )
 }
 
