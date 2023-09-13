@@ -1,94 +1,104 @@
 {
   "musicClass": [
     {
-      "name": "Piano Lessons",
-      "description": "Learn to play the piano instruction.",
-      "instructor": "Emily Davis",
+      "name": "Piano",
+      "description": "Learn piano.",
+      "instructor": "Emily",
       "instrument": "Piano",
       "day_of_week": "Tuesdays",
-      "number_of_students": 8,
-      "price": 60
+      "students": 8,
+      "price": 60,
+      "status":"Active"
     },
     {
-      "name": "Violin Classes",
-      "description": "Master the violin expert guidance.",
-      "instructor": "Michael Johnson",
+      "name": "Violin",
+      "description": "Master violin.",
+      "instructor": "Michael",
       "instrument": "Violin",
       "day_of_week": "Wednesdays",
-      "number_of_students": 6,
-      "price": 55
+      "students": 6,
+      "price": 55,
+      "status":"Active"
     },
     {
-      "name": "Drum Workshop",
-      "description": "Explore the world in an workshop.",
-      "instructor": "Sarah Miller",
+      "name": "Drums",
+      "description": "Drum workshop.",
+      "instructor": "Sarah",
       "instrument": "Drums",
       "day_of_week": "Saturdays",
-      "number_of_students": 12,
-      "price": 70
+      "students": 12,
+      "price": 70,
+      "status":"Active"
     },
     {
-      "name": "Saxophone Lessons",
-      "description": "Discover the saxophone with lessons.",
-      "instructor": "Robert Clark",
+      "name": "Saxophone",
+      "description": "Saxophone lessons.",
+      "instructor": "Robert",
       "instrument": "Saxophone",
       "day_of_week": "Thursdays",
-      "number_of_students": 7,
-      "price": 65
+      "students": 7,
+      "price": 65,
+      "status":"Closed"
     },
     {
-      "name": "Guitar Masterclass",
-      "description": "Elevate your guitar skills masterclass.",
-      "instructor": "James Anderson",
+      "name": "Guitar",
+      "description": "Guitar masterclass.",
+      "instructor": "James",
       "instrument": "Guitar",
       "day_of_week": "Fridays",
-      "number_of_students": 10,
-      "price": 75
+      "students": 10,
+      "price": 75,
+      "status":"Closed"
     },
     {
-      "name": "Bass Guitar Lessons",
-      "description": "Learn to groove with bass guitar.",
-      "instructor": "Maria Rodriguez",
-      "instrument": "Bass Guitar",
+      "name": "Bass",
+      "description": "Groove with bass.",
+      "instructor": "Maria",
+      "instrument": "Bass",
       "day_of_week": "Mondays",
-      "number_of_students": 6,
-      "price": 70
+      "students": 6,
+      "price": 70,
+      "status":"Closed"
     },
     {
-      "name": "Flute Classes",
-      "description": "Become a flutist with flute lessons.",
-      "instructor": "Daniel Brown",
+      "name": "Flute",
+      "description": "Flute classes.",
+      "instructor": "Daniel",
       "instrument": "Flute",
       "day_of_week": "Wednesdays",
-      "number_of_students": 8,
-      "price": 55
+      "students": 8,
+      "price": 55,
+      "status":"Archived"
     },
     {
-      "name": "Trumpet Workshop",
-      "description": "Master the trumpet in workshop.",
-      "instructor": "Laura White",
+      "name": "Trumpet",
+      "description": "Trumpet workshop.",
+      "instructor": "Laura",
       "instrument": "Trumpet",
       "day_of_week": "Saturdays",
-      "number_of_students": 10,
-      "price": 80
+      "students": 10,
+      "price": 80,
+      "status":"Archived"
     },
     {
-      "name": "Voice Training",
-      "description": "Improve your singing vocal training.",
-      "instructor": "Mark Johnson",
+      "name": "Voice",
+      "description": "Singing training.",
+      "instructor": "Mark",
       "instrument": "Vocals",
       "day_of_week": "Tuesdays",
-      "number_of_students": 5,
-      "price": 60
+      "students": 5,
+      "price": 60,
+      "status":"Archived"
     },
     {
-      "name": "Keyboard Lessons",
-      "description": "Learn to play step-by-step lessons.",
-      "instructor": "Anna Davis",
+      "name": "Keyboard",
+      "description": "Keyboard lessons.",
+      "instructor": "Anna",
       "instrument": "Keyboard",
       "day_of_week": "Mondays",
-      "number_of_students": 7,
-      "price": 50
+      "students": 7,
+      "price": 50,
+      "status":"Active"
     }
   ],
   "Enrolments": [

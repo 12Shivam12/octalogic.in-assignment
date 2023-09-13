@@ -7,40 +7,40 @@ const Courses = () => {
     const [state, setState] = useState(data.musicClass)
     return (
         <>
-            <div className=''>
+            <div className='w-[90%] float-right'>
                 <h2 className='text-left text-2xl font-black mb-5 text-slate-600' >Courses</h2>
                 <div className='flex justify-between mb-10'>
                     <h3 className='text-left text-lg font-extrabold text-slate-500'>course List</h3>
-                    <input className='text-left pl-3 border border-gray-300' type="text"  placeholder='Search...' />
+                    <input className='text-left pl-3 border border-gray-300 bg-white' type="text"  placeholder='Search...' />
                 </div>
 
                 <div className='flex justify-center mb-10'>
-                    <table className="border-collapse text-left font-bold text-[13px]">
+                    <table className="border-collapse text-left font-bold text-[13px] w-[100%] bg-white p-5">
                         <thead>
                             <tr className=" border-b border-slate-300">
-                                <th>Name</th>
-                                <th>Description</th>
-                                <th>Instructor</th>
-                                <th>Instrument</th>
-                                <th>Day of the Week</th>
-                                <th>Number of Students</th>
-                                <th>Price</th>
-                                <th>Status</th>
-                                <th>Action</th>
+                                <th className='w-1/10 text-center'>Name</th>
+                                <th className='w-1/10 text-center'>Description</th>
+                                <th className='w-1/10 text-center'>Instructor</th>
+                                <th className='w-1/10 text-center'>Instrument</th>
+                                <th className='w-1/10 text-center'>Day of the Week</th>
+                                <th className='w-1/10 text-center'>Number of Students</th>
+                                <th className='w-1/10 text-center'>Price</th>
+                                <th className='w-1/10 text-center'>Status</th>
+                                <th className='w-1/10 text-center'>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             {state.map((musicClass, index) => (
-                                <tr className='border-inherit border border-slate-400 ...' key={index} >
-                                    <td>{musicClass.name}</td>
-                                    <td>{musicClass.description}</td>
-                                    <td>{musicClass.instructor}</td>
-                                    <td>{musicClass.instrument}</td>
-                                    <td>{musicClass.day_of_week}</td>
-                                    <td>{musicClass.number_of_students}</td>
-                                    <td>${musicClass.price}</td>
-                                    <td>Active</td>
-                                    <td className='pl-3 cursor-pointer'><BsThreeDotsVertical /></td>
+                                <tr className='border-inherit border border-slate-200 ...' key={index} >
+                                    <td className='w-1/10 text-center'>{musicClass.name}</td>
+                                    <td className='w-1/10 text-center'>{musicClass.description}</td>
+                                    <td className='w-1/10 text-center'>{musicClass.instructor}</td>
+                                    <td className='w-1/10 text-center'>{musicClass.instrument}</td>
+                                    <td className='w-1/10 text-center'>{musicClass.day_of_week}</td>
+                                    <td className='w-1/10 text-center'>{musicClass.students}</td>
+                                    <td className='w-1/10 text-center'>{musicClass.price}</td>
+                                    <td className='w-1/10 text-center'>{musicClass.status}</td>
+                                    <td className='w-1/10 text-center pl-3 cursor-pointer'><BsThreeDotsVertical /></td>
                                 </tr>
                             ))}
                         </tbody>
