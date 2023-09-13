@@ -6,7 +6,7 @@ import { BiSolidPlaylist } from 'react-icons/bi'
 
 const Navbar = () => {
     return (
-        <div className=' float-left flex flex-col gap-5 '>
+        <div className='flex flex-col gap-5'>
             <Link to='/'>
                 <div className='w-[70px] h-[50px] rounded-md flex items-center justify-center flex-col bg-red-200'>
                     <BiCategory className='text-3xl' />

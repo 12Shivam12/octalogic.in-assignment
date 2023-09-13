@@ -7,7 +7,7 @@ const Courses = () => {
     const [state, setState] = useState(data.musicClass)
     return (
         <>
-            <div className='w-[90%] float-right'>
+            <div className='w-[80vw]'>
                 <h2 className='text-left text-2xl font-black mb-5 text-slate-600' >Courses</h2>
                 <div className='flex justify-between mb-10'>
                     <h3 className='text-left text-lg font-extrabold text-slate-500'>course List</h3>
