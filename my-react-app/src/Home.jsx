@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import data from './MusicClasses.json'
+import Card from './Card'
 
 const Home = () => {
     const [state, setState] = useState(data.Enrolments)
@@ -8,12 +9,21 @@ const Home = () => {
     // console.log(bestStudents)
     return (
         <>
-            <h1 className="text-lg font-[900]">Overview</h1>
+            <div className='flex flex-col'>
+                <h1 className="text-lg font-[900] float-left self-start">Overview</h1>
+                <div className='flex justify-center gap-5'>
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+            </div>
             <div className="flex justify-between">
                 <h3 className="text-md font-extrabold">LATEST ENROLMENTS</h3>
                 <h4 className="text-sm font-semibold">View All Courses</h4>
             </div>
-            <table className="border-collapse text-left font-bold text-[13px] w-4/5 bg-slate-100">
+            <table className="border-collapse text-left font-bold text-[13px] w-4/5 m-auto">
                 <thead>
                     <tr className=" border-b border-slate-400">
                         <th>Enr. No</th>
@@ -40,7 +50,7 @@ const Home = () => {
                 <h3 className="text-md font-extrabold">LATEST ENROLMENTS</h3>
                 <h4 className="text-sm font-semibold">View All Courses</h4>
             </div>
-            <table className="border-collapse text-left font-bold text-[13px] w-4/5 bg-slate-100">
+            <table className="border-collapse text-left font-bold text-[13px] w-4/5 bg-slate-100 m-auto">
                 <thead>
                     <tr className=" border-b border-slate-400">
                         <th>Reg.No</th>

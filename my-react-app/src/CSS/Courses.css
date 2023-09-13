@@ -2,8 +2,10 @@
 
 *{
     font-family: 'Inter', sans-serif;
+    background-color: rgb(244, 244, 244);
 }
 
 th, td {
-    padding: 8px 5px 8px 5px
+    padding: 8px 5px 8px 5px;
+    background-color: rgb(255, 255, 255);
   }

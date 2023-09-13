@@ -1,18 +1,31 @@
-
+import './CSS/Courses.css'
 
 const Card = () => {
     return (
-        <div className="w-[233px] h-[96px] border border-slate-950">
-            <div className="flex items-center justify-center">
-                <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-contacts-twitter-flatart-icons-outline-flatarticons.png" alt="contact-icon"
-                    className="font-medium w-[30px] h-[30px]" />
-                <div className="text-left">
-                    <h1 className="font-[900] text-2xl">164</h1>
-                    <p className="text-xs">Total no of Students</p>
+        <>
+
+
+
+            <div className="flex flex-col justify-between items-center p-2 bg-white
+                            h-[90px] w-[250px]">
+                <div className="flex items-center gap-4 bg-white">
+                    <img
+                        src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-contacts-twitter-flatart-icons-outline-flatarticons.png"
+                        alt="contact-icon"
+                        className="w-[35px] h-[35px] bg-green-200 rounded-xl"
+                    />
+                    <div className="text-left">
+                        <h1 className="font-[900] text-2xl bg-white">164</h1>
+                        <p className="text-[10px] font-bold bg-white">Total no of Students</p>
+                    </div>
                 </div>
+                <button className="text-[10px] font-extrabold text-red-500 self-end">View</button>
             </div>
-            <button>View</button>
-        </div>
+
+
+
+        </>
+
     )
 }
 

@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
-    <Card/>
+    {/* <Card/> */}
     {/* <Courses/> */}
-    {/* <Home/> */}
+    <Home/>
     </>
   )
 }
