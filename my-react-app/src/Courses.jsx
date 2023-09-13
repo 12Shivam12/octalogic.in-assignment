@@ -5,13 +5,25 @@ import { BsThreeDotsVertical } from 'react-icons/bs'
 
 const Courses = () => {
     const [state, setState] = useState(data.musicClass)
+    const [serachQuery,setSearchQuery] = useState("");
+    
+
+
+    const filteredData = state.filter((value) =>{
+        return (value.name.toLocaleLowerCase().includes(serachQuery.toLocaleLowerCase()) ||
+                value.description.toLocaleLowerCase().includes(serachQuery.toLocaleLowerCase()) ||
+                value.instructor.toLocaleLowerCase().includes(serachQuery.toLocaleLowerCase()) ||
+                value.day_of_week.toLocaleLowerCase().includes(serachQuery.toLocaleLowerCase()) ||
+                value.status.toLocaleLowerCase().includes(serachQuery.toLocaleLowerCase()));
+    })
+
     return (
         <>
             <div className='w-[80vw]'>
                 <h2 className='text-left text-2xl font-black mb-5 text-slate-600' >Courses</h2>
                 <div className='flex justify-between mb-10'>
                     <h3 className='text-left text-lg font-extrabold text-slate-500'>course List</h3>
-                    <input className='text-left pl-3 border border-gray-300 bg-white' type="text"  placeholder='Search...' />
+                    <input className='text-left pl-3 border border-gray-300 font-bold bg-white' type="text"  value={serachQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder='Search...' />
                 </div>
 
                 <div className='flex justify-center mb-10'>
@@ -30,7 +42,7 @@ const Courses = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {state.map((musicClass, index) => (
+                            {filteredData.map((musicClass, index) => (
                                 <tr className='border-inherit border border-slate-200 ...' key={index} >
                                     <td className='w-1/10 text-center'>{musicClass.name}</td>
                                     <td className='w-1/10 text-center'>{musicClass.description}</td>
